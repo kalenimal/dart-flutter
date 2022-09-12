@@ -27,6 +27,8 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  fluentui_icons: ^1.0.0
+  gap: ^2.0.0
   flutter:
     sdk: flutter
 
@@ -58,7 +60,7 @@ flutter:
   uses-material-design: true
 
   assets: 
-    - images/lake.jpg
+    - assets/images/
 
   # To add assets to your application, add an assets section, like this:
   # assets:
