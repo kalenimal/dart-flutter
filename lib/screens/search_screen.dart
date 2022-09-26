@@ -121,6 +121,7 @@ class SearchScreen extends StatelessWidget {
           ),
           const Gap(20),
           Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Expanded(
                 child: Container(
@@ -152,6 +153,7 @@ class SearchScreen extends StatelessWidget {
               const Gap(10),
               Expanded(
                   child: Column(
+                   /*  mainAxisAlignment: MainAxisAlignment.start, */
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   Stack(
@@ -183,7 +185,41 @@ class SearchScreen extends StatelessWidget {
                           ),
                         ))
                     ],
-                  )
+                  ),
+                  const Gap(15),
+                  Container(
+                    height: 170,
+                    padding: const EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(15),
+                      color: Colors.red.shade300
+                    ),
+                    child: Column(
+                     children: [
+                      Text('Take love', style: Styles.headlineStyle2.copyWith(color: Colors.white)),
+                      const Gap(20),
+                      RichText(
+                        text: const TextSpan(
+                          children: [
+                            TextSpan(
+                              text: '😍',
+                              style: TextStyle(fontSize: 28)
+                            ),
+                            TextSpan(
+                              text: '😘',
+                              style: TextStyle(fontSize: 40)
+                            ),
+                             TextSpan(
+                              text: '🥰',
+                              style: TextStyle(fontSize: 28)
+                            )
+                          ]
+                        ),
+                      ),
+                     ],
+                    ),
+                  ),
+                   const Gap(40)
                 ],
               ))
             ],
